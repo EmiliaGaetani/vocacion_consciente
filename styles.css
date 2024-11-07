@@ -1,0 +1,161 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #acc2d1; /* Fondo azul suave /*
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #345f7d;
+    width: 100%;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+*/
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 2.5em;
+    color: #345f7d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.intro .content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-title {
+    color: #345f7d;
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.intro .text {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.intro p {
+    color: #345f7d;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.intro .image {
+    flex: 1;
+    text-align: center;
+}
+
+.intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+}
+
+.info-box {
+    flex: 1;
+    background-color: #97bdcf; /* Celeste más claro para diferenciar */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-box img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.info-box h2 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.info-box ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    font-size: 1.1em;
+    color: #000000;
+}
+
+.info-box ul li {
+    padding: 8px 0;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro .content {
+        flex-direction: column;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+
+    .info-box {
+        margin-bottom: 20px;
+    }
+}
