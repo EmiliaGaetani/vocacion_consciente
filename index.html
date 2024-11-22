@@ -1,29 +1,38 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <title>Vocacion consciente</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <a href="index.html" class="boton1">
+            <a href="index.html" class="logo">
                 <img src="images/logo_vocacion.consciente.png" alt="logo">
             </a>
-            <a href="seccion2.html" class="boton">Test OVO</a>
-            <a href="seccion3.html" class="boton">Derechos y leyes laborales</a>
-            <a href="seccion4.html" class="boton">Historia del trabajo</a>
-            <a href="seccion5.html" class="boton">Universidades</a>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="seccion2.html" class="boton">Test OVO</a></li>
+                <li><a href="seccion3.html" class="boton">Derechos y leyes laborales</a></li>
+                <li><a href="seccion4.html" class="boton">Historia del trabajo en Argentina</a></li>
+                <li><a href="seccion5.html" class="boton">Universidades</a></li>
+            </ul>
         </nav>
     </header>
-    
+
     <main>
         <h1>Vocación consiente</h1>
         <h3>¿Necesitas ayuda para encontrar tu vocación?</h3>
@@ -36,45 +45,54 @@
         <div class="derecha">
             <div class="contenido">
                 <p>
-                    En Argentina elige, apuntamos a que los estudiantes secundarios y los jóvenes que buscan encontrar su vocación,
-                    conozcan el mercado laboral y puedan conocer, a través de sus criterios sobre sí mismos, qué área del trabajo
+                    En Argentina elige, apuntamos a que los estudiantes secundarios y los jóvenes que buscan encontrar
+                    su vocación,
+                    conozcan el mercado laboral y puedan conocer, a través de sus criterios sobre sí mismos, qué área
+                    del trabajo
                     les puede interesar para realizarse como personas, haciendo lo que les guste. <br><br>
-                    Es por esto, que creamos un test de orientación vocacional y compilamos información útil para que aquellos
-                    que estén interesados en ingresar al mundo laboral lo hagan conociendo sus intereses, derechos y obligaciones
+                    Es por esto, que creamos un test de orientación vocacional y compilamos información útil para que
+                    aquellos
+                    que estén interesados en ingresar al mundo laboral lo hagan conociendo sus intereses, derechos y
+                    obligaciones
                     y las leyes que los amparan.
                 </p>
             </div>
         </div>
     </div>
 
-    
+
+    <footer>
+        <div class="footer-contenedor">
+            <div class="footer1">
+                <a href="https://www.instagram.com/" class="boton-footer">
+                    <img src="images/logo_instagram-removebg-preview.png" alt="instagram">
+                </a>
+                <a href="https://x.com/?lang=es" class="boton-footer">
+                    <img src="images/x_logo-removebg-preview.png" alt="x">
+                </a>
+                <a href="https://www.facebook.com/?locale=es_LA" class="boton-footer">
+                    <img src="images/facebook_logo-removebg-preview.png" alt="facebook">
+                </a>
+                
+            </div>
+            <div class="footer1">
+                <p>Lucía Arrufat, Emilia Gaetani, Victoria Palacio, July Zuran</p>
+                
+                
+                
+            </div>
+            <br>
+            <p>Copyright @ 2024 - Todos los derechos reservados</p>
+            <div class="legales">
+              <a href="#">Información legal</a> |  <a href="#">Política de privacidad</a>
+            </div>
+        </div>
+
+    </footer>
+
 </body>
-<footer>
-    <div class="footer-contenedor">
-        <div class="footer1">
-            <h3>Nosotras</h3>
-            <br>
-            <p>Lucía Arrufat</p>
-            <p>Emilia Gaetani</p>
-            <p>Victoria Palacio</p>
-            <p>July Zuran</p>
-        </div>
-        <div class="footer1">
-            <h3>Contacto</h3>
-            <br>
-            <p>larrufat@pioix.edu.ar</p>
-            <p>egaetani@pioix.edu.ar</p>
-            <p>vpalacio@pioix.edu.ar</p>
-            <p>jzuran@pioix.edu.ar</p>
-        </div>
-        <div class="footer1">
-            <h3>Redes Sociales</h3>
-            <br>
-            <a href="https://www.instagram.com/?hl=es" class="boton">Instagram</a>
-            <a href="https://x.com/?lang=es" class="boton">X (twitter)</a>
-            <a href="https://www.facebook.com/?locale=es_LA" class="boton">Facebook</a>
-        </div>
-    </div>
-    
-</footer>
+<script>function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+</script>
 </html>

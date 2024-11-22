@@ -1,58 +1,105 @@
-.playfair-display-normal {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
 
-.lexend-normal> {
-  font-family: "Lexend", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
-    background-color: #567c8d;
-    text-align: center;
-    justify-content: center;
+body {
+    background-color: #cbd9e6;
+    font-family: "Lexend", sans-serif;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
+/* Encabezado */
+header {
+    background-color: #567c8d;
+    padding: 10px 20px;
+    width: 100%;
+}
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 
+.logo img {
+    width: 100px;
+}
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #f5efe8;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #2f4156;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    color: #f5efe8;
+    cursor: pointer;
+}
+
+/* Fondo principal */
 main{
     text-align: center;
     background: url(images/fondo.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 90%;
+    width: 100%;
+    max-width: 1600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-h1{
+
+h1 {
     font-family: "Playfair Display", serif;
-    padding-top: 15%;
     color: #2f4156;
-    font-size: 300%;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-h3{
+h3 {
     font-family: "Lexend", sans-serif;
     color: black;
-    font-size: 150%;
+    font-size: 1.5rem;
 }
 
+/* Información principal */
 .info {
     display: flex;
     width: 100%;
-    height: calc(100% - 40px); 
+    height: 100%; 
     background-color: #cbd9e6;
 }
 
@@ -80,28 +127,62 @@ h3{
 
 .contenido {
     font-size: 1.2rem; 
-    line-height: 1.6;
     text-align: left;
     color: #2f4156;
     white-space: pre-line; 
     font-family: "Lexend", sans-serif;
 }
 
+/* Footer */
 footer {
     width: 100%;
     background-color: #567c8d;
     color: white;
     text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
+    padding: 25px 0px;
+
     font-family: "Lexend", sans-serif;
 }
 
-body{
-    background-color: #cbd9e6;
-    text-align: center;
+.footer1 h3{
+    color: white
 }
 
+.footer1 p{
+    font-size: 1rem;
+}
+
+.footer-contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 1.5%;
+}
+
+.boton-footer img{
+    width: 3%;  
+}
+
+.boton-footer{
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+    font-size: 100%;
+    cursor: pointer;
+    color: #f5efe8;
+    padding: 50px 10px 0px 10px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.boton-footer:hover{
+    background-color: #2f4156;
+}
+
+.legales{
+    text-decoration: none;
+    color: white;
+}
+
+/* seccion 2 */
 .titulo{
     margin-top: 80px;
 }
@@ -110,6 +191,7 @@ h2{
     color:#2f4156;
     font-size: 200%;
     font-family: "Playfair Display", serif;
+    font-weight: bold;
 }
 
 .texto{
@@ -118,10 +200,10 @@ h2{
 }
 
 .boton2 {
-    background-color: #2f4156;
+    background-color: #567c8d;
     color: #f5efe8;
     font-size: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
@@ -134,50 +216,399 @@ h2{
 }
 
 .boton2:hover {
-    background-color: #567c8d;
+    background-color:  #2f4156;
 }
 
-.footer-contenedor{
-    display: grid;
-    grid-template-columns: repeat(3 ,1fr);
+/* seccion 3 */
+.intro {
+    background-color: #ffffff;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.intro .content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.intro .text {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.intro .image {
+    flex: 1;
     text-align: center;
-   font-size: 120%;
 }
 
-.boton{
+.intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+}
+
+.info-box {
+    flex: 1;
+    background-color: #97bdcf;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-box img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.info-box h2 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.info-box ul {
+    list-style: none;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 1.1em;
+    color: #000000;
+}
+
+.info-box ul li {
+    padding: 8px 0;
+}
+
+.main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* seccion 4 */
+.linea-tiempo{
+    text-align: center;
+    align-items: center;
+}
+
+/* Botones */
+.boton {
     font-family: "Playfair Display", serif;
-    text-decoration: none;
-    font-size: 150%;
-    cursor: pointer;
     color: #f5efe8;
-    padding: 30px 15px 0px 15px;
-
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.boton:hover{
+.boton:hover, .boton2:hover, .boton3:hover {
     background-color: #2f4156;
 }
 
-.boton1{
-    font-family: "Playfair Display", serif;
-    text-decoration: none;
-    font-size: 120%;
+/*UNIVERSIDADES*/
+.universidades-contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    gap: 30px;
+    padding-bottom: 60px;
+}
+
+.universidades-imagenes{
+    text-align: center;
+    background-color: #eef7ffff;
+    margin: 30px 20px 0px 20px ;
+    border-radius: 8px;
+    padding-bottom: 20px;
+}
+
+.universidades-imagenes p{
+    padding: 20px 0px 20px 0px;
+}
+
+.universidades-imagenes img{
+    width: 80%;
+    margin-bottom: 5%;
+    border-radius: 8px;
+    margin: 5%;
+}
+
+.boton3{
+    color: #567c8d;
+    text-align: center;
     cursor: pointer;
-    color: #f5efe8;
-    padding: 0px 15px 0px 15px;
-
 }
 
-.boton1 img{
-    width: 40%;
-    margin-top: 2%;
+/* Media Queries */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        background-color: #567c8d;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .boton-footer img{
+        width: 5%;  
+    }
 }
 
-nav {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "boton1 ovo derechos historia universidades"; 
+@media (max-width: 480px) {
+    .izquierda img {
+        width: 80%;
+        margin-bottom: 0px;
+        margin-top: 50px;
+        padding-bottom: 0px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding-top: 5%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding-top: 5%;
+    }
+
+    h3 {
+        font-family: "Lexend", sans-serif;
+        color: black;
+        font-size: 1rem;
+    }
+
+    .contenido {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0px;
+        padding-top: 0px;
+    }
+
+    .derecha {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 40px 0px 40px;
+        color: #2f4156;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        margin-top: 55%;
+        padding: 20px
+    }
+
+    .footer1{
+        font-size: 0.1rem;
+    }
+
+    .boton-footer img{
+        width: 10%;  
+    }
+
+    .titulo{
+        text-align: center;
+    }
+
+    .texto{
+        margin: 40px 10px 40px 10px;
+        text-align: center;
+    }
+
+    iframe{
+        width: 80%;
+    }
+
+    .boton2 {
+        font-size: 100%;
+        font-weight: 700;
+        border-radius: 5px;
+        margin-bottom: 0px;
+    }
+
+    .linea-tiempo img{
+        width: 100%;
+    }
+
+    .universidades-contenedor{
+        grid-template-columns: repeat(1, 1fr); 
+ 
+    }
+
+    .intro {
+        background-color: #ffffff;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .intro .content {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .text {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .intro .image {
+        flex: 0;
+        text-align: center;
+    }
+    
+    .intro img {
+        max-width: 0%;
+    }
+    
+    .info-container {
+        display: grid;
+        justify-content: space-around;
+        gap: 20px;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .info-box {
+        flex: 1;
+        background-color: #97bdcf;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .info-box img {
+        max-width: 80px;
+        margin-bottom: 10px;
+    }
+    
+    .info-box h2 {
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    
+    .info-box ul {
+        list-style: none;
+        padding-left: 10px;
+        text-align: left;
+        font-size: 1.1em;
+        color: #000000;
+    }
+    
+    .info-box ul li {
+        padding: 8px 0;
+    }
+    
+    .main {
+        width: 100%;
+        max-width: 1200px;
+        padding: 100px 30px 0px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .image{
+        width: 0%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .izquierda img {
+        width: 80%;
+        margin-bottom: 0px;
+        margin-top: 50px;
+        padding-bottom: 0px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding-top: 5%;
+    }
+
+    .contenido {
+        font-size: 1rem;
+        line-height: 1.4;
+        text-align: center;
+        padding: 0px;
+        padding-top: 0px;
+    }
+
+    .derecha {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 40px 0px 40px;
+        color: #2f4156;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        margin-top: 30%;
+        padding: 20px
+    }
+
+    .boton-footer img{
+        width: 7%;  
+    }
+
+    
+    .linea-tiempo img{
+        width: 100%;
+    }
+
+    .universidades-contenedor{
+        grid-template-columns: repeat(2, 1fr); 
+ 
+    }
 }

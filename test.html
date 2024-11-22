@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test OVO</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="images/logo_vocacion.consciente.png" alt="logo">
+            </a>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links">
+                <li><a href="seccion2.html" class="boton">Test OVO</a></li>
+                <li><a href="seccion3.html" class="boton">Derechos y leyes laborales</a></li>
+                <li><a href="seccion4.html" class="boton">Historia del trabajo en Argentina</a></li>
+                <li><a href="seccion5.html" class="boton">Universidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br>
+
+    <main>
+        <form>
+            <div class="p">
+                <p>1. ¿Te gusta trabajar en equipo y colaborar con otros para resolver problemas?</p>
+                <select id="r1">
+                    <option value="0">Selecciona una respuesta</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                    <option value="aveces">Solo a veces</option>
+                </select>
+            </div>
+            <div class="p">
+                <p>2. ¿Te interesa la tecnología y te gusta estar al día con las innovaciones?</p>
+                <select id="r2">
+                    <option value="0">Selecciona una respuesta</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                    <option value="aveces">Solo a veces</option>
+                </select>
+            </div>
+            <div class="p">
+                <p>3. ¿Te sientes cómodo/a hablando en público y liderando actividades?</p>
+                <select id="r3">
+                    <option value="0">Selecciona una respuesta</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                    <option value="aveces">Solo a veces</option>
+                </select>
+            </div>
+            <div class="p">
+                <p>4. ¿Disfrutas de materias como matemática y física, y de resolver problemas lógicos?</p>
+                <select id="r4">
+                    <option value="0">Selecciona una respuesta</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                    <option value="aveces">Solo a veces</option>
+                </select>
+            </div>
+            <div class="p">
+                <p>5. ¿Te gusta ayudar a los demás y pensar en cómo mejorar sus vidas?</p>
+                <select id="r5">
+                    <option value="0">Selecciona una respuesta</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                    <option value="aveces">Solo a veces</option>
+                </select>
+            </div>
+            <div class="p">
+                <p>6. ¿Te interesan las artes, la música, el diseño o la creatividad en general?</p>
+                <select id="r6">
+                    <option value="0">Selecciona una respuesta</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                    <option value="aveces">Solo a veces</option>
+                </select>
+            </div>
+            <div class="p">
+                <p>7. ¿Te atrae la idea de emprender un proyecto propio o crear un negocio?</p>
+                <select id="r7">
+                    <option value="0">Selecciona una respuesta</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                    <option value="aveces">Solo a veces</option>
+                </select>
+            </div>
+            <div class="p">
+                <p>8. ¿Prefieres trabajar en un ambiente que cambia constantemente y presenta nuevos desafíos?</p>
+                <select id="r8">
+                    <option value="0">Selecciona una respuesta</option>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                    <option value="aveces">Solo a veces</option>
+                </select>
+            </div>
+        </form>
+    </main>
+            <br><br>
+
+            <button onclick="evaluarTest()">Evaluar</button>
+
+            <br><br>
+
+            <h2>Resultado:</h2>
+            <p id="resultado"></p>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="footer-contenedor">
+            <div class="footer1">
+                <a href="https://www.instagram.com/" class="boton-footer">
+                    <img src="images/logo_instagram-removebg-preview.png" alt="instagram">
+                </a>
+                <a href="https://x.com/?lang=es" class="boton-footer">
+                    <img src="images/x_logo-removebg-preview.png" alt="x">
+                </a>
+                <a href="https://www.facebook.com/?locale=es_LA" class="boton-footer">
+                    <img src="images/facebook_logo-removebg-preview.png" alt="facebook">
+                </a>
+                
+            </div>
+            <div class="footer1">
+                <p>Lucía Arrufat, Emilia Gaetani, Victoria Palacio, July Zuran</p>
+                
+                
+                
+            </div>
+            <br>
+            <p>Copyright @ 2024 - Todos los derechos reservados</p>
+            <div class="legales">
+              <a href="#">Información legal</a> |  <a href="#">Política de privacidad</a>
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
