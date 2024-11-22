@@ -388,6 +388,33 @@ h2{
     .boton-footer img{
         width: 5%;  
     }
+
+    .contenido{
+        text-align: center;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        margin-top: 10%;
+        padding: 20px
+    }
+
+    .derecha {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px 0px 40px;
+        color: #2f4156;
+    }
+
+    .izquierda img {
+        width: 80%;
+        margin-bottom: 0px;
+        margin-top: 50px;
+        padding-bottom: 0px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -426,13 +453,13 @@ h2{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0px 40px 0px 40px;
+        padding: 0px 10px 0px 10px;
         color: #2f4156;
     }
 
     footer {
         font-size: 0.8rem;
-        margin-top: 55%;
+        margin-top: 45%;
         padding: 20px
     }
 
@@ -449,7 +476,7 @@ h2{
     }
 
     .texto{
-        margin: 40px 10px 40px 10px;
+        margin: 40px 30px 40px 30px;
         text-align: center;
     }
 
@@ -476,7 +503,7 @@ h2{
     .intro {
         background-color: #ffffff;
         padding: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         border-radius: 8px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         display: flex;
@@ -512,7 +539,7 @@ h2{
     .info-container {
         display: grid;
         justify-content: space-around;
-        gap: 20px;
+        gap: 40px;
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
@@ -582,6 +609,7 @@ h2{
         padding: 0px;
         padding-top: 0px;
     }
+    
 
     .derecha {
         flex: 1;
@@ -594,7 +622,7 @@ h2{
 
     footer {
         font-size: 0.8rem;
-        margin-top: 30%;
+        margin-top: 40%;
         padding: 20px
     }
 
@@ -609,6 +637,16 @@ h2{
 
     .universidades-contenedor{
         grid-template-columns: repeat(2, 1fr); 
+        margin-top: 100px;
  
+    }
+
+    .texto{
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+
+    .boton2{
+        margin-top: 100px;
     }
 }
